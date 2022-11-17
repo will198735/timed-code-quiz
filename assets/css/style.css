@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(241, 132, 132);
+
+    font-family: monospace;
+}
+body {
+    background-color: cornflowerblue;
+}
+p {
+    color: white;
+    font-size: 1.3em;
+} 
+button {
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 1.3em;
+}
+.outer-container {
+    padding: 10px;
+} 
+.top-bar p {
+    float: right;
+}
