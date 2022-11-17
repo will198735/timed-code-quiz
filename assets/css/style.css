@@ -21,6 +21,14 @@ button {
     background-color: black;
     font-size: 1.3em;
 }
+
+h1, h2 {
+    color: antiquewhite;
+    text-align: center;
+}
+li {
+    list-style: none;
+}
 /* outer container section */
 .outer-container {
     padding: 10px;
@@ -41,8 +49,53 @@ button {
    height: 100%;
    width: 50%;
    margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 
  }
 
 
- /* header-container section */
+ /* header-container section */ 
+ .quiz-intro, main{
+    /* display: none; */
+    margin-bottom: 30vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(43, 56, 82);
+ }
+ .quiz-intro p {
+    text-align: center;
+ }
+ .quiz-intro button {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+ }
+ main {
+    display: block;
+ }
+
+ /* quiz question */
+ .question {
+    display: none;
+ }
+
+ /* quiz finish */
+ .quiz-finish {
+    display: none;
+
+ }
+ .highscores {
+    display: block;
+
+ } .highscores ol {
+   
+    max-height: 200px;
+ }
+ .highscores ol:hover {
+    overflow: scroll;
+ }
+  
+
+ 
