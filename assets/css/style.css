@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid rgb(241, 132, 132);
+    /* border: 1px solid rgb(241, 132, 132); */
 /* global defaul font */
     font-family: monospace;
     color: white;
@@ -17,9 +17,15 @@ p {
     font-size: 1.3em;
 } 
 button {
+    color: #e0de6b;
+    border-radius: 8px;
+    line-height: 8px;
     outline: none;
-    background-color: black;
+    background-color: rgb(34, 27, 27);
     font-size: 1.3em;
+    height: 30px;
+    font-size: 16px;
+    
 }
 
 h1, h2 {
@@ -31,16 +37,33 @@ li {
 }
 /* outer container section */
 .outer-container {
-    padding: 10px;
+    margin: auto;
+    /* width: 55vw; */
+    padding: 20px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: start;
+    border: 1px solid red;
+    height: 700px;
+    box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+    
 } 
 
 /* top bar container */
 .top-bar p {
+    padding: 4px;
+    border-radius: 8px;
+    background-color: rgb(224, 104, 128);
     float: right;
+    border: 1px solid rgb(10, 10, 10);
+    box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+    
+}
+.top-bar button {
+    background-color: rgb(224, 104, 128);
+    color: white; 
+
 }
 
  /* inner-container section */
@@ -51,7 +74,8 @@ li {
    margin: 0 auto;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: space-between;
+   border-radius: 15px;
 
  }
 
@@ -63,6 +87,8 @@ li {
     margin-left: 10%;
     margin-right: 10%;
     background-color: rgb(43, 56, 82);
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
  }
  .quiz-intro p {
     text-align: center;
@@ -78,7 +104,11 @@ li {
 
  /* quiz question */
  .question {
-    display: none;
+    /* display: none; */
+    border-radius: 15px;
+    border: 1px solid red;
+    box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+
  }
 
  /* quiz finish */
@@ -95,6 +125,9 @@ li {
  }
  .highscores ol:hover {
     overflow: scroll;
+ }
+ .clear {
+    float: right;
  }
   
 
